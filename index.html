@@ -28,8 +28,10 @@
         <script>
             var admin0url = 'http://localhost:8888/admin0/{z}/{x}/{y}.png';
             var admin1url = 'http://localhost:8888/admin1/{z}/{x}/{y}.png';
+            var admin2url = 'http://localhost:8888/admin2/{z}/{x}/{y}.png';
             var admin0 = L.tileLayer(admin0url);
             var admin1 = L.tileLayer(admin1url);
+            var admin2 = L.tileLayer(admin2url);
             var map = L.map('map', {
                 center: [40, -80],
                 zoom: 1,
@@ -39,7 +41,8 @@
             });
             var layers = {
                 "Countries": admin0,
-                "US States": admin1
+                "US States": admin1,
+                "US Counties": admin2
             };
             L.control.layers(null,layers).addTo(map);
         </script>
