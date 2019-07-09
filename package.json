@@ -1,0 +1,29 @@
+{
+  "name": "mapnik_node_tile_server",
+  "version": "1.0.0",
+  "description": "Basic map tile web server using express.js and node-mapnik bindings",
+  "main": "server.js",
+  "scripts": {
+    "mapnik-example": "node mapnik-example.js",
+    "start": "node server.js"
+  },
+  "author": "Pamela Kinnaird",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/sphericalmercator": "^1.1.0",
+    "express": "^4.17.1",
+    "mapnik": "^4.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pocketilmatto/mapnik_node_tile_server.git"
+  },
+  "keywords": [
+    "mapnik"
+  ],
+  "bugs": {
+    "url": "https://github.com/pocketilmatto/mapnik_node_tile_server/issues"
+  },
+  "homepage": "https://github.com/pocketilmatto/mapnik_node_tile_server#readme"
+}

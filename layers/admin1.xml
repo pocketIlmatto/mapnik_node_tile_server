@@ -1,0 +1,15 @@
+<Map srs="+init=epsg:3857">
+  <Style name="polygons">
+    <Rule>
+      <PolygonSymbolizer fill="#374C70" />
+      <LineSymbolizer stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.5" />
+    </Rule>
+  </Style>
+  <Layer name="world" srs="+init=epsg:4326">
+    <StyleName>polygons</StyleName>
+    <Datasource>
+      <Parameter name="file">./ne_110m_admin_1_states_provinces.shp</Parameter>
+      <Parameter name="type">shape</Parameter>
+    </Datasource>
+  </Layer>
+</Map>
